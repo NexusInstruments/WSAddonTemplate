@@ -1,3 +1,3 @@
-[submodule "lib"]
-	path = lib
-	url = https://github.com/NexusInstruments/SimpleUtils.git
+[submodule "libs/SimpleUtils"]
+	path = libs/SimpleUtils
+	url = https://chronosis@github.com/NexusInstruments/SimpleUtils.git

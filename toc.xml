@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Addon Author="Chronosis" APIVersion="10" Name="SampleAddon" Description="A sample addon">
+  <Script Name="lib\SimpleUtils-1.0.lua"/>
+  <Script Name="SampleAddon.lua"/>
+  <Form Name="SampleAddon.xml"/>
+</Addon>

@@ -7,7 +7,7 @@ require "Window"
 -- SampleAddon Definition
 -----------------------------------------------------------------------------------------------
 local SampleAddon= {}
-local Utils = Apollo.GetPackage("SimpleUtils-1.0").tPackage
+local Utils = Apollo.GetPackage("SimpleUtils").tPackage
 
 -----------------------------------------------------------------------------------------------
 -- SampleAddon constants
@@ -42,9 +42,9 @@ function SampleAddon:new(o)
   self.__index = self
 
   -- Saved and Restored values are stored here.
-  o.settings = shallowcopy(tDefaultSettings)
+  o.settings = deepcopy(tDefaultSettings)
   -- Volatile values are stored here. These are impermanent and not saved between sessions
-  o.state = shallowcopy(tDefaultState)
+  o.state = deepcopy(tDefaultState)
 
   return o
 end
@@ -61,9 +61,9 @@ function SampleAddon:Init()
   }
   Apollo.RegisterAddon(self, bHasConfigureFunction, strConfigureButtonText, tDependencies)
 
-  self.settings = shallowcopy(tDefaultSettings)
+  self.settings = deepcopy(tDefaultSettings)
   -- Volatile values are stored here. These are impermanent and not saved between sessions
-  self.state = shallowcopy(tDefaultState)
+  self.state = deepcopy(tDefaultState)
 end
 
 -----------------------------------------------------------------------------------------------

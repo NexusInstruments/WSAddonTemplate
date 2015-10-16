@@ -14,7 +14,7 @@ local Utils = Apollo.GetPackage("SimpleUtils-1.0").tPackage
 -----------------------------------------------------------------------------------------------
 local Major, Minor, Patch, Suffix = 1, 1, 0, 0
 local AddonName = "SampleAddon"
-local SAMPLEADDON_CURRENT_VERSION = string.format("%d.%d.%d%s", Major, Minor, Patch)
+local SAMPLEADDON_CURRENT_VERSION = string.format("%d.%d.%d%s", Major, Minor, Patch, Suffix)
 
 local tDefaultSettings = {
   version = SAMPLEADDON_CURRENT_VERSION,

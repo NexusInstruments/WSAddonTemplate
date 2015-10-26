@@ -157,7 +157,7 @@ function SampleAddon:OnRestore(eType, tSavedData)
     self.settings.version = SAMPLEADDON_CURRENT_VERSION
 
   else
-    self.tConfig = deepcopy(tDefaultOptions)
+    self.settings = deepcopy(tDefaultSettings)
   end
 end
 
